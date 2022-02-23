@@ -1,0 +1,14 @@
+#red{
+    box-Shadow:10px 10px 10px #ebebeb;
+    background: #f5f5f5;
+    border-Radius: 5px;
+    font-Size:20px;
+}
+
+
+@media (max-width:600px) {
+    #red{
+        font-Size: 9px;
+        
+}
+}

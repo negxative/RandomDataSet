@@ -1,0 +1,50 @@
+ {
+        "Ready":[
+            {
+                "desc":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, eligendi debitis! Recusandae voluptas porro labore laboriosam ad illo iste quaerat.",
+                "pix":"https://i.pinimg.com/236x/04/bd/b7/04bdb72cc2ef2d0a2cdda2114339f1b4.jpg",
+                "flag":"https://e7.pngegg.com/pngimages/439/1019/png-clipart-yellow-penalty-flag-yellow-flag-angle-flag.png"
+            },
+            {
+                "desc":"Lorem ipsum dolor sit .",
+                "pix":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaPq8znewqxlSFgQHnVqxQsRD7Y9ALN2nZYdXHS5Je8eI5vDYXJYUcqG3y8g1mC4g-vM&usqp=CAU",
+                "flag":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_JHRup88QM9CoRTxCKZ76TMEPNQjEsrfBQ&usqp=CAU"
+            }
+        ],
+        "InProgress":[
+            {
+                "desc":"Lorem ipsum dolor sit amet.",
+                "pix":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyUO0lmYGGzGe9jOXgF8XzowltGRkjgNfjvA&usqp=CAU",
+                "flag":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_JHRup88QM9CoRTxCKZ76TMEPNQjEsrfBQ&usqp=CAU"
+            },
+            {
+                "desc":"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam, tenetur nulla doloribus id sequi totam!.",
+                "pix":"https://dz9yg0snnohlc.cloudfront.net/cro-is-it-healthy-to-chat-with-random-people-online-2.jpg",
+                "flag":"https://flyclipart.com/thumb2/waving-red-flag-icons-png-228061.png"
+            },
+             {
+                "desc":"  Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque est provident sapiente?",
+                "pix":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTa31xKmnI6rYS9nSNXJNOewF7o1E49L6r_Q&usqp=CAU",
+                "flag":"https://e7.pngegg.com/pngimages/439/1019/png-clipart-yellow-penalty-flag-yellow-flag-angle-flag.png"
+            },
+            {
+                "desc":"Lorem ipsum dolor sit amet.",
+                "pix":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUnYGhepz4NXHYBdak-xaSDle7nmvUsJLJifFYOhI3KV2yn29ymSMBD06_YJh5uU8RAw&usqp=CAU",
+                "flag":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_JHRup88QM9CoRTxCKZ76TMEPNQjEsrfBQ&usqp=CAU"
+            }
+        ],
+        "Review":[
+            {
+                "desc":" Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora voluptas assumenda quibusdam consequatur rem quas. Ipsam cum dolore a? Consequuntur vero nisi architecto vel modi hic assumenda illum exercitationem laudantium commodi, eveniet natus similique quo, iste blanditiis voluptate beatae!",
+                "pix":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwUnYGhepz4NXHYBdak-xaSDle7nmvUsJLJifFYOhI3KV2yn29ymSMBD06_YJh5uU8RAw&usqp=CAU",
+                "flag":"https://flyclipart.com/thumb2/waving-red-flag-icons-png-228061.png"
+            },
+            {
+                "desc":"Lorem ipsum dolor sit amet.",
+                "pix":"https://i.pinimg.com/236x/04/bd/b7/04bdb72cc2ef2d0a2cdda2114339f1b4.jpg",
+                "flag":"https://e7.pngegg.com/pngimages/439/1019/png-clipart-yellow-penalty-flag-yellow-flag-angle-flag.png"
+            }
+        ]
+
+    }
+

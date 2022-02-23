@@ -1,35 +1,42 @@
-import { LineChart, Line, CartesianGrid, XAxis, YAxis } from 'recharts';
+import {  CartesianGrid, XAxis, YAxis, ResponsiveContainer, Tooltip, Legend, AreaChart,Area, LabelList } from 'recharts';
 import data from "./ds.json"
+import React,{useState} from 'react';
+import './chart.css'
 
 
-import React from 'react';
 
 const Cht = () => {
-  return <div >
-    <div className="container my-3">
+ 
+  return <>
+  
+    <div className="container my-3" id="chart"  >
       <div className="d-flex justify-content-between align-items-center">
         <div >
-          <h3>Random Data Set</h3>
+          <h3>Order Records</h3>
           For Five Dyas
         </div>
         <div className="d-dlex justify-content-end ">
-          <div class="btn-group" role="group" aria-label="Basic outlined example">
-            <button type="button" className="btn btn-outline-primary">Left</button>
-            <button type="button" className="btn btn-outline-primary">Middle</button>
-            <button type="button" className="btn btn-outline-primary">Right</button>
+          <div className="btn-group" role="group" aria-label="Basic outlined example">
+            <button type="button" className="btn btn-outline-primary">Day</button>
+            <button type="button" className="btn btn-outline-primary">Month</button>
+            <button type="button" className="btn btn-outline-primary">Year</button>
           </div>
         </div>
       </div>
-      <div className="container" style={{ overflow: "scroll" }}>
-        <LineChart width={1150} height={300} data={data}>
-          <Line type="monotone" dataKey="units" stroke="#8884d8" />
+     
+      
+        <AreaChart width={1200} height={300} data={data} id="dam">
+          <Area type="monotone" dataKey="Orders"  stroke="blue" fill="#c4c4c4" id="guy" />
+          <Area type="monotone" dataKey="Available Units" stroke="Green" fill="#c4c4c4" id="puy"/>
+          <Tooltip/>
+          <Legend  />
           <CartesianGrid stroke="#ccc" />
           <XAxis dataKey="date" />
           <YAxis />
-        </LineChart>
+        </AreaChart>
+      
       </div>
-    </div>
-  </div>;
+  </>
 }
 
 

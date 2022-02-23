@@ -9,7 +9,6 @@ import {
 } from "react-router-dom";
 import Users from './Components/Users';
 import Nav from './Components/Nav';
-import Nav2 from './Components/Nav2';
 function App() {
   return (
 

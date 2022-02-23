@@ -1,20 +1,15 @@
 import React, { useState } from 'react';
 import data from "./ds.json"
+import './Users.css'
 const Users = () => {
     let i = 1;
     let total = 0;
-    let style = {
-
-        boxShadow: " 10px 10px 10px #ebebeb",
-        background: "#f5f5f5",
-        borderRadius: "5px",
-
-    }
+    
     return (
 
-        <div>
+        <div className='container mb-3'>
 
-            <table class="table my-5" style={style}>
+            <table className="table my-5"  id="red">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -26,31 +21,28 @@ const Users = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {
-                        data.forEach((e) => {
-                            total += e.units;
-                        }),
-                        data.forEach((e) => {
-                            e["percentage"] = (e.units / total) * 100;
-                        })
-
-                    }
                     {data.map((el) => {
+                        let a=(el.Orders/el['Available Units'])*100;
+                        let b="";
+                        if(a<25) b="info";
+                        else if(a<50) b="success";
+                        else if(a<75) b="warning";
+                        else b="danger";
                         return <>
                             <tr key={el.user}>
-                                <th scope="row"><img src={el.pic} height="40px" width="40px" alt="" style={{borderRadius:"50px"}} /></th>
+                                <th><img src={el.pic} height="25px" width="25px" alt="" style={{borderRadius:"50px"}} /></th>
                                 <td>{el.user}</td>
                                 <td><center><img src={el.country} height="10px" alt="" /></center></td>
                                 <td >
                                     <div>
                                         <div className="d-flex justify-content-between">
-                                            <h5>{el.units}</h5>
+                                            <b>{el.Orders}</b>
                                             <span>{el.date}</span>
                                         </div>
                                         <div>
 
-                                            <div class="progress" style={{ height: "5px" }}>
-                                                <div class="progress-bar bg-success" role="progressbar" style={{ width: `${el.percentage}%` }} aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div className="progress" style={{ height: "5px" }}>
+                                                <div className={`progress-bar bg-${b}`} role="progressbar" style={{ width: `${a}%` }} ></div>
                                             </div>
                                         </div>
                                     </div></td>
