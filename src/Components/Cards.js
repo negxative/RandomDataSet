@@ -1,22 +1,11 @@
 import { Hidden } from '@mui/material';
-import { red } from '@mui/material/colors';
+import { ply } from '@mui/material/colors';
 import React, { useState } from 'react';
 import data from "./data.json"
+import "./Cards.css"
 let i = 0;
 const Cards = () => {
-    let [gsf, setGsf] = useState([]);
-
-
-    async function componentDidMount() {
-        if (i <= 30) {
-            let url = "https://api.github.com/users";
-            let data = await (await fetch(url)).json()
-            setGsf(data)
-            i++;
-        }
-    }
-    componentDidMount();
-
+    
     let style = [{
         borderTop:"solid 4px #8942df",
         boxShadow: " 10px 5px 20px #dfdede",
@@ -56,7 +45,7 @@ const Cards = () => {
                     <h2> <img src="https://t4.ftcdn.net/jpg/01/75/85/33/360_F_175853300_IxHH36rul4weabVGix3pUBrFqfjDtE21.jpg" alt=""  style={{height:"100px",width:"100px",borderRadius:"50px"}}/> Release Projects</h2>
                 </div>
                 <div class="d-flex flex-wrap justify-content-center ">
-                    <div class="d-flex flex-column bd-highlight mx-3 my-3" style={{ minWidth: "350px",maxWidth:'30%' }}>
+                    <div class="d-flex flex-column bd-highlight mx-3 my-3"  id='ply'>
                         <div class="p-3 bd-highlight" style={style[0]}>
                             <h5 class="mx-3">Ready <span style={count}>{data.Ready.length}</span></h5>
                         </div>
@@ -79,7 +68,7 @@ const Cards = () => {
                             </>
                         })}
                     </div>
-                    <div class="d-flex flex-column bd-highlight mx-3 my-3" style={{ minWidth: "350px",maxWidth:'30%' }} >
+                    <div class="d-flex flex-column bd-highlight mx-3 my-3" id="ply"  >
                         <div class="p-3 bd-highlight" style={style[1]}>
                             <h5>In Progress <span style={count}>{data.InProgress.length}</span> </h5>
                         </div>
@@ -102,7 +91,7 @@ const Cards = () => {
                             </>
                         })}
                     </div>
-                    <div class="d-flex flex-column bd-highlight mx-3 my-3"  style={{ minWidth: "350px",maxWidth:'30%' }} >
+                    <div class="d-flex flex-column bd-highlight mx-3 my-3"  id="ply" >
                         <div class="p-3 bd-highlight" style={style[2]}>
                             <h5>Reveiw <span style={count}>{data.Review.length}</span></h5>
                         </div>

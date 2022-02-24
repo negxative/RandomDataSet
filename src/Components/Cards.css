@@ -1,0 +1,17 @@
+#ply{
+    min-width: 20%;
+    max-width: 30%;
+}
+
+
+@media (max-width:1200px) {
+    #ply{
+        min-width: 20%;
+        max-width: 25%;
+    }
+}
+@media (max-width:900px) {
+    #ply{
+       min-width: 80%;
+    }
+}

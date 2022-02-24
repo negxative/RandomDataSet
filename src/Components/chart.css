@@ -1,7 +1,7 @@
 #dam{
+    width: 1100px;
     height:300px;
-    width:100%;
-   box-shadow: 10px ;
+    box-shadow: 10px ;
     font: 15px;
 }
 #chart{
@@ -9,10 +9,10 @@
 }
 
 
-@media (max-width:900px) {
+@media (max-width:700px) {
     #dam{
      width:600px;
-     height:300px;
+     height:400px;
     
     } 
 }
@@ -21,7 +21,7 @@
 @media (max-width:500px) {
        #dam{
         width:330px;
-        height:300px;
+        height:400px;
        
        } 
 }
